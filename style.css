@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+header {
+    background-color: blueviolet;
+    padding: 16px 0;
+    color: aliceblue;
+    display: flex;
+    border-bottom: 16px solid #390159;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button {
+    margin-left: 20px;   
+}
+
+form {
+    background-color: beige;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 20px;   
+}
+
+input,
+button {
+    padding: 8px;
+}
+
+button {
+    background-color: rgb(49, 106, 64);
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#botao-cancelar {
+    background-color: rgb(174, 51, 51);
+}
+
+ul {
+    display: flex; /*para os elementos ficar um ao lado do outro*/
+    flex: wrap wrap; /*para criar uma linha toda vez que a tela chegar no maximo */
+}
+
+ul li {
+    width: 25%;
+    list-style: none; /*para tirar o ponto da lista*/
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden; /*para esconder o que passar do tamanho proposto*/
+}
+
+ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-imagem-link {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+}
+
+.overlay-imagem-link a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link {
+    opacity: 1;
+}
+
+
+
