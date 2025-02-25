@@ -51,7 +51,7 @@ button {
 
 ul {
     display: flex; /*para os elementos ficar um ao lado do outro*/
-    flex: wrap wrap; /*para criar uma linha toda vez que a tela chegar no maximo */
+    flex-wrap: wrap; /*para criar uma linha toda vez que a tela chegar no maximo */
 }
 
 ul li {
